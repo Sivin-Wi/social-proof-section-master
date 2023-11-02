@@ -1,0 +1,314 @@
+@media only screen and (max-width:375px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'League Spartan';
+        src: url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+    }
+
+    :root {
+        --headingColor: hsl(300, 43%, 22%);
+        --containerHeading: hsl(333, 80%, 67%);
+        --containerOneParaColor: hsl(303, 10%, 53%);
+        --bgContainerTwoColor: hsl(300, 24%, 96%);
+        --containerPara: hsl(0, 0%, 100%);
+    }
+
+
+    body {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 0.9375rem;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .attribution {
+        display: none;
+    }
+
+    .section {
+        height: 100svh;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .bgImgOne {
+        display: none;
+    }
+
+    .bgImgTwo {
+        display: none;
+    }
+
+
+    .containerOne {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .containerOne > .heading-para {
+        width: 100%;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .containerOne > .heading-para > .heading {
+        line-height: 1.1;
+        color: var(--headingColor);
+        font-weight: 700;
+    }
+
+    .containerOne > .heading-para > .para {
+        line-height: 1.7;
+        color: var(--containerOneParaColor);
+        font-weight: 500;
+    }
+
+    .containerTwo {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: 290px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 17px 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .containerTwo > .subContainerOne {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        line-height: 1.7;
+        border-radius: 8px;
+        background-color: var(--bgContainerTwoColor);
+    }
+
+    .containerTwo > .subContainerOne > .rating-para > .para > h4 {
+        color: var(--headingColor);
+        font-weight: 700;
+    }
+
+    .containerTwo > .subContainerTwo {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        line-height: 1.7;
+        border-radius: 8px;
+        background-color: var(--bgContainerTwoColor);
+    }
+
+    .containerTwo > .subContainerTwo > .rating-para > .para > h4 {
+        color: var(--headingColor);
+        font-weight: 700;
+    }
+
+    .containerTwo > .subContainerThree {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        line-height: 1.7;
+        border-radius: 8px;
+        background-color: var(--bgContainerTwoColor);
+    }
+
+    .containerTwo > .subContainerThree > .rating-para > .para > h4 {
+        color: var(--headingColor);
+        font-weight: 700;
+    }
+
+    .containerThree {
+        width: 100%;
+        height: 935px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    /* containerThree - subContainerOne */
+
+    .containerThree > .subContainerOne {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 270px;
+        background-color: var(--headingColor);
+        border-radius: 8px;
+    }
+
+    .containerThree > .subContainerOne > .subContainer {
+        display: flex;
+        width: 83%;
+        flex-direction: column;
+        height: 190px;
+    }
+
+
+    .containerThree > .subContainerOne > .subContainer > .heading-img-para {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 190px;
+    }
+
+    .containerThree > .subContainerOne > .subContainer > .heading-img-para > .heading-img > .img {
+        display: inline-block;
+        margin-top: 7px;
+    }
+
+    .containerThree > .subContainerOne > .subContainer > .heading-img-para > .heading-img > .heading {
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 1.33;
+    }
+
+    .containerThree > .subContainerOne > .subContainer > .heading-img-para > .heading-img > .heading > .headingOne {
+        color: var(--containerPara);
+        font-weight: 700;
+    }
+
+    .containerThree > .subContainerOne > .subContainer > .heading-img-para > .heading-img > .heading > .headingTwo {
+        color: var(--containerHeading);
+        font-weight: 500;
+    }
+
+    .containerThree > .subContainerOne > .subContainer > .heading-img-para > .para {
+        text-align: center;
+        line-height: 1.47;
+        color: var(--containerPara);
+    }
+
+    /* containerThree - subContainerTwo */
+
+    .containerThree > .subContainerTwo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 270px;
+        background-color: var(--headingColor);
+        border-radius: 8px;
+    }
+
+    .containerThree > .subContainerTwo > .subContainer {
+        display: flex;
+        width: 83%;
+        flex-direction: column;
+        height: 190px;
+    }
+
+
+    .containerThree > .subContainerTwo > .subContainer > .heading-img-para {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 190px;
+    }
+
+    .containerThree > .subContainerTwo > .subContainer > .heading-img-para > .heading-img > .img {
+        display: inline-block;
+        margin-top: 7px;
+    }
+
+    .containerThree > .subContainerTwo > .subContainer > .heading-img-para > .heading-img > .heading {
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 1.33;
+    }
+
+    .containerThree > .subContainerTwo > .subContainer > .heading-img-para > .heading-img > .heading > .headingOne {
+        color: var(--containerPara);
+        font-weight: 700;
+    }
+
+    .containerThree > .subContainerTwo > .subContainer > .heading-img-para > .heading-img > .heading > .headingTwo {
+        color: var(--containerHeading);
+        font-weight: 500;
+    }
+
+    .containerThree > .subContainerTwo > .subContainer > .heading-img-para > .para {
+        text-align: center;
+        line-height: 1.47;
+        color: var(--containerPara);
+    }
+
+    /* containerThree - subContainerThree */
+
+    .containerThree > .subContainerThree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 270px;
+        background-color: var(--headingColor);
+        border-radius: 8px;
+    }
+
+    .containerThree > .subContainerThree > .subContainer {
+        display: flex;
+        width: 83%;
+        flex-direction: column;
+        height: 190px;
+    }
+
+
+    .containerThree > .subContainerThree > .subContainer > .heading-img-para {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 190px;
+    }
+
+    .containerThree > .subContainerThree > .subContainer > .heading-img-para > .heading-img > .img {
+        display: inline-block;
+        margin-top: 7px;
+    }
+
+    .containerThree > .subContainerThree > .subContainer > .heading-img-para > .heading-img > .heading {
+        display: inline-block;
+        margin-left: 20px;
+        line-height: 1.33;
+    }
+
+    .containerThree > .subContainerThree > .subContainer > .heading-img-para > .heading-img > .heading > .headingOne {
+        color: var(--containerPara);
+        font-weight: 700;
+    }
+
+    .containerThree > .subContainerThree > .subContainer > .heading-img-para > .heading-img > .heading > .headingTwo {
+        color: var(--containerHeading);
+        font-weight: 500;
+    }
+
+    .containerThree > .subContainerThree > .subContainer > .heading-img-para > .para {
+        text-align: center;
+        line-height: 1.47;
+        color: var(--containerPara);
+    }
+}
