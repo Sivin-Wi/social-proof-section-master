@@ -24,8 +24,8 @@
 
 ### Links 🔗
 
-- Solution URL: [page]()
-- Live Site URL: [page]()
+- Solution URL: [page](https://www.frontendmentor.io/solutions/build-with-grid-and-flexbox-Y2a3iIA7yp)
+- Live Site URL: [page](https://sivin-wi.github.io/social-proof-section-master/)
 
 ## My process
 
